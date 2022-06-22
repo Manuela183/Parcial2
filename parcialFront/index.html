@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 id="parcial">Parcial</h1>
+    <br><br><br>
+    <form>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre">
+        </div>
+        <div class="form-group">
+          <label for="Capital">Capital</label>
+          <input type="text" class="form-control" id="Capital">
+        </div>
+        <div class="form-group">
+          <label for="Idioma Oficial">Idioma Oficial</label>
+          <input type="text" class="form-control" id="Idioma Oficial">
+        </div>
+        <div class="form-group">
+          <label for="Población">Población</label>
+          <input type="text" class="form-control" id="Población" onchange="validar()">
+        </div><br>
+        <button type="submit" class="btn btn-primary" disabled>Submit</button>
+      </form>
+    <br><br><br>
+    <div id = grafico></div>
+    <br><br><br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">nombre</th>
+                <th scope="col">capital</th>
+                <th scope="col">idioma oficial</th>
+                <th scope="col">población</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html>
